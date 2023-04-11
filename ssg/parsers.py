@@ -7,7 +7,7 @@ from markdown import markdown
 from ssg.content import Content
 
 class Parser:
-    extensions: list[str] = []
+    extensions: List[str] = []
 
 
     def valid_extension(self, extension):
