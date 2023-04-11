@@ -4,7 +4,8 @@ from _collections_abc import Mapping
 
 
 class Content(Mapping):
-    __delimeter = "^(?:-|\+){3}\s*$"
+    __delimeter = r"^(?:-|\+){3}\s*$"
+    __regex = re.compile(__delimeter, re.MULTILINE)
 
 
     @classmethod
